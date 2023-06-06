@@ -1,1 +1,0 @@
-{"name":"Local: C","url":"/home/led/cpp/19/C.cpp","tests":[{"id":1682347420840,"input":"1 6\n0 0","output":"5\nHHHOO"},{"id":1682348145165,"input":"1 999\n0 0","output":"21\nHHHHHHHHOOOOOOOOHOHHH"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/led/cpp/19/C.cpp","group":"local","local":true}
