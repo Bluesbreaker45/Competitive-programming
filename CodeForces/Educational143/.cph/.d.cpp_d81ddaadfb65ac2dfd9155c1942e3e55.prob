@@ -1,0 +1,1 @@
+{"name":"Local: d","url":"/home/led/cpp/CodeForces/Educational143/d.cpp","tests":[{"id":1687089620214,"input":"12\n1 3 3 7 8 5 2 2 2 2 4 2\n","output":"36\n"},{"id":1687089628753,"input":"6\n4 2 6 6 6 4\n","output":"2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/led/cpp/CodeForces/Educational143/d.cpp","group":"local","local":true}
