@@ -65,7 +65,12 @@ int binary2() {
     for (int i = 0; i < r; i++) { // Regularly, the largest size of an array would not be used in code. Use actual lenght instead!
         range[i] = i;
     }
-    return lower_bound(range, range + r, n / 2, [](int a, int b){return sorted(a+1, 1) < sorted(b+1, 1);}) - range;
+    return lower_bound(range, range + r, true, [](int a, bool val){
+        // Orginally, I used return sorted(a+1, 1) < sorted(val, 1);, but sorted(val, 1) is always true.
+        // Then, changed to return sorted(a+1, 1) < val (i.e. true);
+        // Then, changed to return sorted(a+1, 1) != true;
+        return !sorted(a+1, 1); // finally.
+        }) - range;
 }
 
 int main() {
