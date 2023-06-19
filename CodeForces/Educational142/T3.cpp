@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <assert.h>
 using namespace std;
 
@@ -57,6 +58,16 @@ int binary() {
     assert(false);
 }
 
+int binary2() {
+    int r = n / 2 + 1;
+    int l = 0;
+    int range[200003];
+    for (int i = 0; i < r; i++) { // Regularly, the largest size of an array would not be used in code. Use actual lenght instead!
+        range[i] = i;
+    }
+    return lower_bound(range, range + r, n / 2, [](int a, int b){return sorted(a+1, 1) < sorted(b+1, 1);}) - range;
+}
+
 int main() {
     int t;
     cin >> t;
@@ -69,7 +80,7 @@ int main() {
         }
 
         // cout << count(1) << endl;
-        cout << binary() << endl;
+        cout << binary2() << endl;
     }
 
     return 0;
