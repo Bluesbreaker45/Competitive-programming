@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"/home/led/cpp/AtCoder/Beginner297/C.cpp","tests":[{"id":1687428246765,"input":"2 3\nTTT\nT.T\n","output":"PCT\nT.T\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/led/cpp/AtCoder/Beginner297/C.cpp","group":"local","local":true}
