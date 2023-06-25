@@ -1,6 +1,5 @@
 // 18:36
 // 19:05
-#include <iostream>
 #include <cstdio>
 #include <cstring>
 
