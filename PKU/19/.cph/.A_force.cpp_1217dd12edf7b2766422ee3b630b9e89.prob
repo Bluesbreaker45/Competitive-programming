@@ -1,0 +1,1 @@
+{"name":"Local: A_force","url":"/home/led/cpp/PKU/19/A_force.cpp","tests":[{"id":1687667389814,"input":"1000000\n1000000\n1000000\n1000000\n1000000\n1000000\n0","output":"9\n9\n99"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/led/cpp/PKU/19/A_force.cpp","group":"local","local":true}
