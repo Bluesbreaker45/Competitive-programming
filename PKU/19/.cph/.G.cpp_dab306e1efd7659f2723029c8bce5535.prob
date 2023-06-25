@@ -1,0 +1,1 @@
+{"name":"Local: G","url":"/home/led/cpp/PKU/19/G.cpp","tests":[{"id":1687689304846,"input":"BDHPY\nCM\nGQ\nK\n*\nAC\nB\n$","output":"KGCBDHQMPY\nBAC"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/led/cpp/PKU/19/G.cpp","group":"local","local":true}
