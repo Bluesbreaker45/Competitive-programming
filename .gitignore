@@ -2,7 +2,7 @@
 
 !.gitignore
 !*.h
-!*.cpp
+!*/*/*.cpp
 !*.c
 
 # CPH Judge plugin for OJ test
