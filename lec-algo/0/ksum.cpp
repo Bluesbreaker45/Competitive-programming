@@ -16,19 +16,28 @@ int main() {
   }
 
   vector<double> res;
-  // while (k != 0) {
-  //   start = upper_bound(ptrs + start, ptrs+n, nullptr, [](double* _, double* b){return !ksum(arr, b - arr, arr+n, k);}) - ptrs;
-
-  //   res.push_back(arr[start - 1]);
-  //   k -= arr[start - 1];
+  // for (int i = n; i >= 0 && k > 0; i--) {
+  //   if (i == 0) {
+  //     assert(k == arr[0]);
+  //     res.push_back(k);
+  //     break;
+  //   }
+  //   bool ok = ksum(arr, 0, i, k);
+  //   if (!ok) {
+  //     res.push_back(arr[i]);
+  //     k -= arr[i];
+  //   }
   // }
-  for (int i = n; i >= 0 && k > 0; i--) {
-    if (i == 0) {
-      assert(k == arr[0]);
-      res.push_back(k);
-      break;
-    }
-    bool ok = ksum(arr, 0, i, k);
+  int i = n;
+  while (i >= 0 && k > 0) {
+    // INVARIANT: ksum(arr, 0, i, k) == 1
+    i--;
+    // if (i == 0) { // protective code
+    //   assert(k == arr[0]);
+    //   res.push_back(k);
+    //   break;
+    // }
+    bool ok = ksum(arr, 0, i, k) == 1;
     if (!ok) {
       res.push_back(arr[i]);
       k -= arr[i];
